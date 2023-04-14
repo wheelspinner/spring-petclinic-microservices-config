@@ -18,3 +18,11 @@ spring.jpa.hibernate.ddl-auto: none
 
 # Logging
 logging.level.org.springframework: INFO
+
+---
+spring:
+  profiles: docker
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_HOST}:${EUREKA:PORT}/eureka/
