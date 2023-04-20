@@ -28,4 +28,5 @@ eureka:
       defaultZone: ${EUREKA_HOST}:${EUREKA_PORT}/eureka/
       
   instance:
-    hostname: ${HOST_NAME}
+#     hostname: ${HOST_NAME}
+    preferIpAddress: true
